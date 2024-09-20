@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loja</title>
+
+<!--CSS-->
+<style>
+
+body{
+    background-color: rgb(156, 49, 255);
+    color: white;
+    font: normal 18pt arial;
+}
+
+</style>
+</head>
+<!--HTML-->
+<body>
+     <H1>Sorveteria</H1>
+
+     <h3>Valor do sorvete</h3>
+     <input type="number" name="valor"  id = "valor">
+     <br>
+     <h3><strong>Qtd</strong> de sorvetes</h3>
+     <input type="number"   name="quantidade"  id = "quantidade">
+     <input type="button" value = "Total" onclick="valortotal()">
+     
+
+
+    <div id = "total">Total</div>
+
+<!--Java Script-->
+<script>
+       var botao = document.getElementById('total')
+       botao.addEventListener('click',clicar)
+
+        function valortotal(){
+            var valorsorvete = document.getElementById('valor')
+            var qtdsorvete   = document.getElementById('quantidade')
+            var n1 = Number (valorsorvete.value)
+            var n2 = Number (qtdsorvete.value)
+            var total = document.getElementById("total")
+            var a = n1 * n2
+           
+
+            if (n2 >= 10 ){
+                total.innerHTML = a * 0.80
+            }
+            else {
+                total.innerHTML = a
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html>
