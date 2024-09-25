@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>troca de valores</title>
+
+<!--CSS-->
+<style>
+    body{
+        background-color:rgb(108, 0, 209);
+        color: rgb(216, 216, 216);
+        font: normal 18pt arial;
+    }
+    
+    
+</style></head><h1>Troca os valoeres 'A' e 'B'</h1>
+
+<!--Java Script-->
+<body><script>
+
+
+var a = Number(prompt("Qual o valor (A): "))
+var b = Number(prompt("Qual o valor (B): "))
+
+console.log("Antes da troca:")
+console.log("A =", a)
+console.log("B =", b)
+
+
+var temp = a
+a = b
+b = temp
+
+
+document.write("Antes da troca: <br>")
+document.write("A = " + b + "<br>")
+document.write("B = " + a + "<br><br>")
+document.write("Depois da troca: <br>")
+document.write("A = " + a + "<br>")
+document.write("B = " + b + "<br>")
+
+
+
+    </script>
+</body>
+</html>
