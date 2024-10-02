@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior e menor de idade</title>
+
+<!--CSS-->
+<style>
+    body{
+        background-color:rgb(108, 0, 209);
+        color: rgb(216, 216, 216);
+        font: normal 18pt arial;
+    }
+    
+    </style>
+
+<!--Java Script-->
+</head><h1>Maior e menor de idade</h1>
+
+<body>
+    <script>
+
+var anoatual = new Date().getFullYear();
+var anonascimento = Number(prompt("Que ano você nasceu: "))
+
+var idade = anoatual - anonascimento
+
+if(idade >= 19) {
+    document.while('Você tem ' +idade+ ', e é maior de idade.  :)')
+}
+else{
+    document.write('Você tem ' +idade+ ', e é menor de idade.  :(')
+}
+
+    </script>
+</body>
+</html>
